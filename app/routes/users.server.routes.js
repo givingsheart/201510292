@@ -52,6 +52,15 @@ module.exports = function(app) {
 		successRedirect: '/'
 	}));
 
+	// Set up the Naver OAuth routes 
+	app.get('/oauth/naver', passport.authenticate('naver', {
+		failureRedirect: '/signin'
+	}));
+	app.get('/oauth/naver/callback', passport.authenticate('naver', {
+		failureRedirect: '/signin',
+		successRedirect: '/'
+	}));
+
 	// Set up the 'signout' route
 	app.get('/signout', users.signout);
 };

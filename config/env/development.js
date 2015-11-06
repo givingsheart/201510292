@@ -1,23 +1,32 @@
-// Invoke 'strict' JavaScript mode
-'use strict';
-
-// Set the 'development' environment configuration object
 module.exports = {
-	db: 'mongodb://localhost/mean-development',
-	sessionSecret: 'developmentSessionSecret',
+	//개발자 옵션
+	sessionSecret: 'givingsheart',
+	//몽고 디비 연결 주소
+	// mongodb://username:password@hostname:port/database
+	db: 'mongodb://localhost/mean-book',
 	facebook: {
-		clientID: 'Facebook Application ID',
-		clientSecret: 'Facebook Application Secret',
-		callbackURL: 'http://localhost:3000/oauth/facebook/callback'
+		clientID : '934524183286742',
+		clientSecret : '8f14c6f09a1cb314779a9ae26a7b6715',
+		callbackURL : 'http://givingsheart.com:3000/oauth/facebook/callback'
 	},
 	twitter: {
-		clientID: 'Twitter Application ID',
-		clientSecret: 'Twitter Application Secret',
-		callbackURL: 'http://localhost:3000/oauth/twitter/callback'
+		clientID : 'TdYuIPLANVe5MChS58o30Ozd9',
+		clientSecret : 'AZmBDbnkJeQN9nqkEvEcvMHq2454y0lpI7wMbnYazbhFEJGUZy',
+		callbackURL : 'http://givingsheart.com:3000/oauth/twitter/callback'
 	},
 	google: {
-		clientID: 'Google Application ID',
-		clientSecret: 'Google Application Secret',
-		callbackURL: 'http://localhost:3000/oauth/google/callback'
-	}
+		clientID : '601297471147-mlf1fid0bkao9iv7sbi26i92c4ou2vpk.apps.googleusercontent.com',
+		clientSecret : 'Y_od3xNa6wQiE291cB4DfcwO',
+		callbackURL : 'http://givingsheart.com:3000/oauth/google/callback'
+	},
+	naver: {
+		clientID : 'ylFUfaFYeZXiYlKYKWWn',
+		clientSecret : 'Xky6E7t2gp',
+		callbackURL : 'http://givingsheart.com:3000/oauth/naver/callback'
+	},
+	daum: {
+		clientID : '2878490111971122002',
+		clientSecret : '5738aede9fd05a70a2f00bdf61888103',
+		callbackURL : 'http://givingsheart.com:3000/oauth/daum/callback'
+	},
 };

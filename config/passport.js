@@ -29,4 +29,5 @@ module.exports = function() {
 	require('./strategies/twitter.js')();
 	require('./strategies/facebook.js')();
 	require('./strategies/google.js')();
+	require('./strategies/naver.js')();
 };

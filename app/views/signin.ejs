@@ -5,6 +5,7 @@
 	<title><%= title %></title>
 </head>
 <body>
+	<img src="/img/logo.png" alt="Logo">
   	<!-- Display flash messages  -->
 	<% for(var i in messages) { %>
 	   <div class="flash"><%= messages[i] %></div>
@@ -26,8 +27,13 @@
 	</form>
 
 	<!-- Render the OAuth authentication links  -->
+	<img src="/img/facebook.png" alt="Facebook">
 	<a href="/oauth/facebook">Sign in with Facebook</a>
+	<img src="/img/twitter.png" alt="Twitter">
 	<a href="/oauth/twitter">Sign in with Twitter</a>
+	<img src="/img/google.png" alt="Google">
+	<a href="/oauth/google">Sign in with Google</a>
+	<img src="/img/naver.png" alt="Naver">
 	<a href="/oauth/google">Sign in with Google</a>
 </body>
 </html>
